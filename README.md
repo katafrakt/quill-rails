@@ -1,3 +1,13 @@
+## Note: this is not official release
+
+Since the author seems not to respond to my pull requests I set up a version I'm gonna use in my projects.
+Feel free to use it as well.
+
+### What I added:
+
+* Support for many instances of quill on one page
+* Basic form helper (`f.quill_editor`)
+
 # quill-rails
 This gem provides Rails 3/4 asset pipeline loading for [Quill](http://quilljs.com/), as well as a very convienient helper method to quickly and easily get a nice looking rich text editor.
 
