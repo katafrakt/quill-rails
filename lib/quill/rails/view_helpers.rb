@@ -11,8 +11,8 @@ module Quill
       def quill_editor(name=nil, options={})
         mod_options = { name: 'quill-value', id: 'quill-value' }.merge options
         @input_name = (name || mod_options[:name])
-        @input_id   = quill_sanitize_id(name || mod_options[:id])
-        @value      = mod_options[:value].present? ? mod_options[:value] : ""
+        @input_id = quill_sanitize_id(mod_options[:id] || name)
+        @value = mod_options[:value].present? ? mod_options[:value] : ""
         custom_template_path = ::Rails.root.join('app', 'views', 'quill', 'template.html.erb')
         if File.exists? custom_template_path
           template_path = custom_template_path
